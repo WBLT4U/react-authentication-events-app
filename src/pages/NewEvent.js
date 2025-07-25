@@ -21,7 +21,7 @@ export async function action({ request }) {
   const formData = await request.formData();
   const eventData = Object.fromEntries(formData);
 
-  const response = await fetch('http://localhost:8080/events', {
+  const response = await fetch('https://react-authentication-events-app.onrender.com/events', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

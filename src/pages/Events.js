@@ -17,7 +17,7 @@ function EventsPage() {
 export default EventsPage;
 
 async function loadEvents() {
-  const response = await fetch('http://localhost:8080/events');
+  const response = await fetch('https://react-authentication-events-app.onrender.com/events');
 
   if (!response.ok) {
     const errorData = await response.json().catch(() => ({}));
